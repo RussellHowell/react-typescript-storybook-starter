@@ -5,22 +5,34 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-app-rewire-hot-loader": "^1.0.1",
+    "react-app-rewire-typescript": "https://github.com/RussellHowell/react-app-rewire-typescript/tarball/master",
     "react-app-rewired": "^1.5.2",
     "react-dom": "^16.3.2",
     "react-hot-loader": "^4.2.0",
     "react-scripts-ts": "2.16.0"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "start": "react-app-rewired start --scripts-version react-scripts-ts",
+    "build": "react-app-rewired build --scripts-version react-scripts-ts",
+    "test": "react-app-rewired test --scripts-version react-scripts-ts --env=jsdom",
+    "eject": "react-app-rewired eject",
+    "storybook": "start-storybook -p 9001 -c storybook"
   },
   "devDependencies": {
+    "@storybook/addon-info": "^3.4.4",
+    "@storybook/addon-knobs": "^3.4.4",
+    "@storybook/react": "^3.4.4",
     "@types/jest": "^22.2.3",
     "@types/node": "^10.1.1",
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
+    "awesome-typescript-loader": "^4.0.1",
+    "babel-plugin-react-docgen": "^1.9.0",
+    "react-docgen": "^2.20.1",
+    "react-docgen-typescript-loader": "^2.0.3",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "storybook-addon-jsx": "^5.3.0",
+    "ts-loader": "^3.5.0",
     "typescript": "^2.8.3"
   }
 }
