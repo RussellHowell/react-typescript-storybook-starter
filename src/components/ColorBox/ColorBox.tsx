@@ -1,8 +1,7 @@
 import * as React from 'react'
 
 export interface IProps  {
-    /** Hex color code that box will display
-    */
+    /** Hex color code that box will display */
     color: string;
     
     /**
@@ -15,7 +14,7 @@ export interface IProps  {
 
 const ColorBox =  (props: IProps) => {
 
-    let style = {
+    const style = {
         backgroundColor: `${props.color}`,
         height: '100px',
         width: '100px'
